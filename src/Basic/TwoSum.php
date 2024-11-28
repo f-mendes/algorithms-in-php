@@ -16,7 +16,7 @@ class TwoSum
         $left = 0;
         $right = count($nums) - 1;
         while ($left < $right) {
-            $sum = $left + $right;
+            $sum = $nums[$left] + $nums[$right];
             if ($sum === $target){
                 return [$nums[$left], $nums[$right]];
             }
