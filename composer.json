@@ -1,0 +1,25 @@
+{
+  "name": "f-mendes/algomania",
+  "description": "AlgoMania is a PHP library that provides a set of algorithms to solve common problems.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fsoares",
+      "email": "felipemendesdev@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Algo\\": "src/"
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.5"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
