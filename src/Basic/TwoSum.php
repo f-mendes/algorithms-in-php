@@ -7,7 +7,7 @@ class TwoSum
 {
     public function handler(array $nums, int $target): array
     {
-        return $this->solutionOne($nums, $target);
+        return $this->solutionTwo($nums, $target);
     }
 
     private function solutionOne(array $nums, int $target): array //n log n
@@ -27,6 +27,19 @@ class TwoSum
                 $right--;
             }
         }
+        return [];
+    }
+    private function solutionTwo(array $nums, int $target): array //O(n)
+    {
+        $seen = [];
+        foreach ($nums as $value) {
+            $complement = $target - $value;
+            if (in_array($complement, $seen)) {
+                return [$complement, $value];
+            }
+            $seen[] = $value;
+        }
+
         return [];
     }
 }
