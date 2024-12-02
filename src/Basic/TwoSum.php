@@ -5,7 +5,7 @@ namespace Algo\Basic;
 
 class TwoSum
 {
-    public function handler(array $nums, int $target): array
+    public function handle(array $nums, int $target): array
     {
         return $this->solutionTwo($nums, $target);
     }
